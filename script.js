@@ -16,6 +16,9 @@ function toggleEdit() {
         $( ".item-content" ).each(function( index ) {
             $(this).css({"animation": "none !important", "animation-iteration-count": "0"})
         });
+        $( ".close" ).each(function( index ) {
+            $(this).css({"visibility": "hidden"})
+        });
     } else {
         edit = true;
         document.getElementById("demo").innerHTML = edit;
@@ -23,10 +26,11 @@ function toggleEdit() {
         $( ".item-content" ).each(function( index ) {
             $(this).css({"animation": "shake " + rnd(1,3) + "s", "animation-iteration-count": "infinite"})
         });
+        $( ".close" ).each(function( index ) {
+            $(this).css({"visibility": "visible"})
+        });
     }
 }
 function closeElem(elem) {
-    alert(grid.getItems().indexOf(elem));
-    grid.remove(1);
+    grid.remove([$('elem1')], true);
 }
-alert(grid.getItems().indexOf($("elem2").parent().parent()));
