@@ -14,7 +14,7 @@ if (isset($_POST) & !empty($_POST)) {
     }
 }
 if (isset($_SESSION['username'])) {
-    $smsg = "You're already logged in!";
+    header('location: home.php');
 }
 ?>
 <html>
@@ -45,5 +45,12 @@ if (isset($_SESSION['username'])) {
         <a class="btn btn-lg btn-primary btn-block" href="register.php">Register</a>
     </form>
 </div>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
