@@ -1,6 +1,9 @@
 .grid {
     position: relative;
 }
+.gridss {
+    border: 5px solid black;
+}
 .item {
     display: block;
     position: absolute;
@@ -81,4 +84,9 @@
 }
 .add-plus {
     margin-top:-40px;
+}
+.grid {
+    margin:auto;
+    display:block;
+    width:90%;
 }
