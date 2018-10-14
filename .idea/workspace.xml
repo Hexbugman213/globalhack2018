@@ -2,106 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c428c2e-247c-4d41-a49d-df83f5ebf681" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/login/connect.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/globalhack2018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/globalhack2018.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/svg/403.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/svg/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/svg/500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/public/svg/503.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/webpack.mix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/login/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,12 +44,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="1" />
+          <entry key="conf" value="3" />
           <entry key="css" value="3" />
           <entry key="html" value="2" />
           <entry key="js" value="1" />
           <entry key="lock" value="1" />
-          <entry key="php" value="8" />
+          <entry key="php" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -151,18 +57,18 @@
           <entry key="CSS" value="3" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="1" />
-          <entry key="PHP" value="8" />
-          <entry key="SmartyConfig" value="1" />
+          <entry key="PHP" value="9" />
+          <entry key="SmartyConfig" value="3" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="conf" value="9" />
+          <entry key="conf" value="71" />
           <entry key="css" value="628" />
           <entry key="html" value="466" />
           <entry key="js" value="1372" />
-          <entry key="php" value="941" />
+          <entry key="php" value="1551" />
           <entry key="txt" value="22" />
         </counts>
       </usages-collector>
@@ -171,9 +77,9 @@
           <entry key="CSS" value="628" />
           <entry key="HTML" value="466" />
           <entry key="JavaScript" value="1372" />
-          <entry key="PHP" value="941" />
+          <entry key="PHP" value="1551" />
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="SmartyConfig" value="9" />
+          <entry key="SmartyConfig" value="71" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -209,16 +115,52 @@
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+              <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://C:/xampp/apache/conf/extra/httpd-ssl.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login/login.php">
+        <entry file="file://C:/xampp/apache/conf/extra/httpd-vhosts.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+            <state relative-caret-position="119">
+              <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="37" column="104" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="104" />
             </state>
           </provider>
         </entry>
@@ -233,26 +175,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login/register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="17" lean-forward="true" selection-end-line="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
               <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/form.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -279,9 +207,12 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/script.js" />
         <option value="$PROJECT_DIR$/login/styles.css" />
-        <option value="$PROJECT_DIR$/login/register.php" />
         <option value="$PROJECT_DIR$/login/connect.php" />
+        <option value="$PROJECT_DIR$/login/logout.php" />
+        <option value="$PROJECT_DIR$/login/register.php" />
         <option value="$PROJECT_DIR$/login/login.php" />
+        <option value="C:/xampp/apache/conf/extra/httpd-ssl.conf" />
+        <option value="C:/xampp/apache/conf/extra/httpd-vhosts.conf" />
       </list>
     </option>
   </component>
@@ -368,7 +299,7 @@
       <option name="presentableId" value="Default" />
       <updated>1539445493616</updated>
       <workItem from="1539445496942" duration="20342000" />
-      <workItem from="1539470225577" duration="8544000" />
+      <workItem from="1539470225577" duration="15697000" />
     </task>
     <task id="LOCAL-00001" summary="frickin main thing">
       <created>1539457488512</created>
@@ -391,11 +322,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539462997623</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="more">
+      <created>1539479384554</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1539479384554</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28886000" />
+    <option name="totallyTimeSpent" value="36039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -439,13 +377,6 @@
     <entry file="file://$PROJECT_DIR$/project/bootstrap/app.php" />
     <entry file="file://$PROJECT_DIR$/project/server.php" />
     <entry file="file://$PROJECT_DIR$/project/config/app.php" />
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/styles.css.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -466,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -487,17 +411,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/register.php">
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="57" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="true" selection-end-line="47" />
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="37" column="104" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="61" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+        <state relative-caret-position="595">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/apache/conf/extra/httpd-ssl.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/apache/conf/extra/httpd-vhosts.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="74" selection-start-line="7" selection-start-column="74" selection-end-line="7" selection-end-column="74" />
         </state>
       </provider>
     </entry>

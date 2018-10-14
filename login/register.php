@@ -1,40 +1,41 @@
 <?php
 require_once('connect.php');
 if (isset($_POST) & !empty($_POST)) {
-    $fail = true;
     $username = mysqli_real_escape_string($connection, $_POST['username']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $password = hash ( "sha256", $_POST['password']);
     $sql = "INSERT INTO `login` (username, email, password) VALUES ('$username', '$email', '$password')";
-    $result = mysqli_query($connection, $sql) or die(mysqli_error($connection));
-    if($result and $fail) {
-        echo "this registration was yeettastic";
+    $result = mysqli_query($connection, $sql);
+    if($result) {
+        $smsg =  "User Registered!";
     } else {
-        echo "faile";
+        $fmsg = "Registration Unsuccesfull.";
     }
 }
 ?>
 <html>
     <head>
         <title>test</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="styles.css" >
-
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div class="container">
+            <br>
+            <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"><?php echo $smsg ?> </div><?php } ?>
+            <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"><?php echo $fmsg ?> </div><?php } ?>
             <form class="form-signin" method="POST">
                 <h2 class="form-signin-heading">Please Login</h2>
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">@</span>
-                    <input type="text" name="username" class="form-control" placeholder="Username" required>
-                </div>
+                <input type="text" name="username" class="form-control" placeholder="Username" required>
                 <label for="inputEmail" class="sr-only">Email</label>
                 <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
                 <label for="inputPassword" class="sr-only">Password</label>
