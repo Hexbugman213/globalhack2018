@@ -13,7 +13,7 @@
 }
 .item-content {
     z-index: 1;
-    background: #eee;
+    background: #fff;
     color: #000;
     padding: 10px;
     border-radius: 10px;
@@ -89,4 +89,7 @@
     margin:auto;
     display:block;
     width:90%;
+}
+.hidden {
+    display: none;
 }

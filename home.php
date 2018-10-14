@@ -2,25 +2,22 @@
 session_start();
 require_once('connect.php');
 $user = $_SESSION['username'];
-echo ":dabs:";
 if (!isset($_SESSION['username'])) { //if there isn't a session
     header('location: login.php'); //redirect to login
 } else { //if there is
-    print_r($_SESSION);
     $sql = "SELECT * FROM `login` WHERE username='$user'"; //from the table where the username is the logged in one
     $result = mysqli_query($connection, $sql); //send command
-    $row = mysqli_fetch_row($result)[4]; //gets 4th row (userdata)
-    print_r($row);
+    $row = mysqli_fetch_row($result)[3]; //gets 4th row (userdata)
+    $row = mysqli_fetch_row($result)[4]; //gets 5th row (layout)
 }
-function update_data($data) {
+function update_layout($layout) {
     global $user, $connection; //hey, use these vars
-    $sql = "UPDATE `login` SET data='$data' WHERE username='$user'"; //command to update data
+    $sql = "UPDATE `login` SET layout='$layout' WHERE username='$user'"; //command to update data
     mysqli_query($connection, $sql); //sends command
 }
 if (isset($_POST) & !empty($_POST)) { //if data submitted
-    echo 'test';
-    print_r($_POST);
-    echo 'test';
+    $implode = implode(" ", $_POST["var"]);
+    update_layout($implode);
 }
 ?>
 <html lang="en">
@@ -71,9 +68,12 @@ if (isset($_POST) & !empty($_POST)) { //if data submitted
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br>
-    <div id="demo"></div>
-    <button onclick="toggleEdit()" class="btn btn-primary">Edit</button>
+    <br>
+    <div class="edit-btn"><button onclick="toggleEdit()" class="btn btn-primary">Edit</button></div>
+    <form action="" method="POST" class="hidden save-btn" id="submit" onsubmit="submitOrder()">
+        <input type="hidden" name="var" id="hiddenboi" value="" />
+        <button type="submit" class="btn btn-success">Save Changes</button>
+    </form>
 </div>
 
 <div id="google_translate_element"></div>

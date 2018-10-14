@@ -4,8 +4,8 @@ if (isset($_POST) & !empty($_POST)) {
     $username = mysqli_real_escape_string($connection, $_POST['username']);
     $email = mysqli_real_escape_string($connection, $_POST['email']);
     $password = hash ( "sha256", $_POST['password']);
-    $sql = "INSERT INTO `login` (username, email, password, userdata, layout) VALUES ('$username', '$email', '$password', 'false', '0 1 2 3 4 5 6 7')";
-    $result = mysqli_query($connection, $sql);
+    $sql = "INSERT INTO `login` (username, email, password, userdata, layout) VALUES ('$username', '$email', '$password', 'false', '1 2 3')";
+    $result = mysqli_query($connection, $sql); // or die("Database Connection Failed\n\n" . mysqli_error($connection)); // to catch errors
     if($result) {
         $smsg =  "User Registered! Click \"Login\" to login.";
     } else {
