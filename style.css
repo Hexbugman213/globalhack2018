@@ -93,3 +93,24 @@
 .hidden {
     display: none;
 }
+.img {
+    width:50%;
+}
+.user {
+    text-align: right;
+    font-size:20px;
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('glyphicons-halflings-regular.eot');
+}
+.item-content {
+    text-align: center;
+}
+.isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    opacity: 0.5;
+    text-decoration: none;
+    pointer-events: none;
+}

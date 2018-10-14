@@ -34,52 +34,72 @@ if (isset($_POST) & !empty($_POST)) { //if data submitted
     <title>Home - <?php echo $user ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="container">
+    <div class="user">Logged in as <b><?php echo $user?></b>   <a href="settings.php"><button class="btn btn-primary">Settings</button></a></div>
+    <img src="Your%20Board.png" class="mx-auto d-block img" width="50%">
     <div class="grid">
 
         <div class="item" data-id="0">
-
+            <a href="https://www.google.com/maps/search/Restaraunts/<?php echo $data[3]; ?>,<?php echo $data[4]; ?>">
             <div class="item-content shake-item">
                 <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
                     <span aria-hidden="true">&times;</span>
                 </button>-->
-                1!
+                <p>Restaraunts near you</p>
             </div>
+            </a>
         </div>
 
         <div class="item" data-id="1">
+            <a href="https://www.google.com/maps/search/Groceries/<?php echo $data[3]; ?>,<?php echo $data[4]; ?>">
             <div class="item-content shake-item">
                 <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
                     <span aria-hidden="true">&times;</span>
                 </button>-->
                 <div class="my-custom-content">
-                    2!
+                    Stores near you
                 </div>
             </div>
+            </a>
         </div>
         <div class="item" data-id="2">
+            <a href="https://www.google.com/maps/search/<?php echo $data[3]; ?>,<?php echo $data[4]; ?>">
             <div class="item-content shake-item">
                 <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
                     <span aria-hidden="true">&times;</span>
                 </button>-->
                 <div class="my-custom-content">
-                    3!
+                    Your location
                 </div>
             </div>
+            </a>
+        </div>
+        <div class="item" data-id="3">
+            <a href="https://www.duolingo.com/courses">
+                <div class="item-content shake-item">
+                    <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
+                        <span aria-hidden="true">&times;</span>
+                    </button>-->
+                    <div class="my-custom-content">
+                        Learn another language
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
     <br>
     <div class="edit-btn"><button onclick="toggleEdit()" class="btn btn-primary">Edit</button></div>
     <form action="" method="POST" class="hidden save-btn" id="submit" onsubmit="submitOrder()">
-        <input type="text" name="var" id="hiddenboi" value="" />
+        <input type="hidden" name="var" id="hiddenboi" value="" />
         <button type="submit" class="btn btn-success">Save Changes</button>
     </form>
 </div>
@@ -128,6 +148,7 @@ if (isset($_POST) & !empty($_POST)) { //if data submitted
 
             $(".save-btn").addClass("hidden");
             $(".edit-btn").removeClass("hidden");
+            $(".item-content").removeClass("isDisabled");
         } else {
             edit = true;
             $(".shake-item").each(function (index) {
@@ -135,11 +156,20 @@ if (isset($_POST) & !empty($_POST)) { //if data submitted
             });
             $(".edit-btn").addClass("hidden");
             $(".save-btn").removeClass("hidden");
+            $(".item-content").addClass("isDisabled");
         }
     }
     function submitOrder() {
         toggleEdit();
         $('#hiddenboi').attr("value", order.join(" "));
+    }
+    function search() {
+        alert("1");
+        var search = document.getElementsByName("search")[0].value;
+        alert("2");
+        var maplink = 'https://www.google.com/maps/search/Restaraunts/<?php echo $data[3]; ?>,<?php echo $data[4]; ?>';
+        alert(maplink);
+        window.open(maplink, '_blank');
     }
     /*
     function closeElem(elem) {

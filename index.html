@@ -1,68 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>index test</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="grid">
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .center{
+            text-align:center;
 
-                <div class="item" data-id="1">
+        }
+        .btn{
+            margin: 0px 100px;
+            display: inline-block;
+        }
+        .register{
+            margin: auto;
+            display: block;
+        }
+        h1{
+            text-align: center;
+            color:#aaaaaa;
+            font-size: 50px;
+            margin: 50px;
 
-                    <div class="item-content shake-item">
-                        <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
-                            <span aria-hidden="true">&times;</span>
-                        </button>-->
-                        1!
-                    </div>
-                </div>
+        }
+        .opening{
+            margin: 100px 75px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<img src="SloganLogo.png" style="width:50%;" class="mx-auto d-block">
 
-                <div class="item" data-id="2">
-                    <div class="item-content shake-item">
-                        <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
-                            <span aria-hidden="true">&times;</span>
-                        </button>-->
-                        <div class="my-custom-content">
-                            2!
-                        </div>
-                    </div>
-                </div>
-                <div class="item" data-id="3">
-                    <div class="item-content shake-item">
-                        <!--<button type="button" class="close" aria-label="Close" onclick=closeElem(this)>
-                            <span aria-hidden="true">&times;</span>
-                        </button>-->
-                        <div class="my-custom-content">
-                            3!
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br><br><br><br><br><br>
-            <div id="demo"></div>
-            <button onclick="toggleEdit()" class="btn btn-primary">Edit</button>
-        </div>
-    </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script src="https://unpkg.com/muuri@0.6.3/dist/muuri.min.js"></script>
-    <script src="script.js"></script>
+<br><br><br><br><br>
+<div class="center">
+    <a href="login.php"><button class="btn btn-primary btn-lg">Login</button></a>
+    <a href="register.php"><button class="btn btn-primary btn-lg">Register</button></a>
+</div>
+<p class="opening">HomeBoard is a service for immigrants to the US to have a dashboard for things in and around their area.
+</p>
+
+</body>
 </html>
-<!--
-                    <div class="item add-item">
-                        <div class="item-content">
 
-                            <div class="my-custom-content">
-                                <div class="addcircle"><div class="add-plus">+</div></div>
-                            </div>
-
-                        </div>
-                    </div>
-                    -->
