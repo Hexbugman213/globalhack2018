@@ -2,12 +2,22 @@
 session_start();
 require_once('connect.php');
 $user = $_SESSION['username'];
-if (!isset($_SESSION['username'])) { //if there isn't a session
-    header('location: login.php'); //redirect to login
-} else { //if there is
+$data = [];
+function update_row() {
+    global $user, $connection, $data;
     $sql = "SELECT * FROM `login` WHERE username='$user'"; //from the table where the username is the logged in one
     $result = mysqli_query($connection, $sql); //send command
     $row = mysqli_fetch_row($result)[4]; //gets 4th row (userdata)
+    if ($row !== 'false') {
+        $data = explode(" ", $row);
+    } else {
+        $data = 'false';
+    }
+}
+if (!isset($_SESSION['username'])) { //if there isn't a session
+    header('location: login.php'); //redirect to login
+} else { //if there is
+    update_row();
 }
 function update_data($data) {
     global $user, $connection; //hey, use these vars
@@ -17,9 +27,10 @@ function update_data($data) {
 if (isset($_POST) & !empty($_POST)) { //if data submitted
     $implode = implode(" ", $_POST);
     update_data($implode);
-    echo "yotestdve";
-    ?><script>alert('Changes Saved!')</script><?php ;
-    } ?>
+    update_row();
+    $smsg = "Changes Saved!";
+}
+    ?>
 <html>
 <head>
     <title>test</title>
@@ -55,25 +66,27 @@ if (isset($_POST) & !empty($_POST)) { //if data submitted
     <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"><?php echo $smsg ?> </div><?php } ?>
     <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"><?php echo $fmsg ?> </div><?php } ?>
     <form class="form form-signin form-settings" method="POST">
+        <?php if($data !== "false") {?>
         <a class="btn btn-lg btn-primary btn-block back" href="home.php">Back</a>
-        <h2 class="form-signin-heading">Settings for <?php echo $user; ?></h2>
+        <h2 class="form-signin-heading">Settings for <?php echo $user; ?></h2><?php } else {?>
+        <h2 class="form-signin-heading">More info for <?php echo $user; }?>
         <h5>First Name</h5>
-        <input type="text" name="fname" class="form-control" placeholder="First Name" required>
+        <input type="text" value="<?php if($data !== "false") {echo $data[0];} ?>" name="fname" class="form-control" placeholder="First Name" required>
         <h5>First Name</h5>
-        <input type="text" name="lname" class="form-control" placeholder="Last Name" required>
+        <input type="text" value="<?php if($data !== "false") {echo $data[1];} ;?>" name="lname" class="form-control" placeholder="Last Name" required>
         <h5>Is English your first language?</h5>
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="option1" autocomplete="off" required> Yes
+            <label class="btn btn-primary <?php if ($data[2] == "on") {echo "active";}?>">
+                <input type="radio" name="options" id="option1" autocomplete="off" value="on" required <?php if ($data[2] == "on") {echo "checked";}?>> Yes
             </label>
-            <label class="btn btn-primary">
-                <input type="radio" name="options" id="option2" autocomplete="off"> No
+            <label class="btn btn-primary <?php if ($data[2] == "off") {echo "active";}?>">
+                <input type="radio" name="options" id="option2" autocomplete="off" value="off" <?php if ($data[2] == "off") {echo "checked";}?>> No
             </label>
         </div>
         <h5>Location</h5>
         <div class="input-group">
-            <input type="text" class="form-control geox" placeholder="latitude" name="latitude"/>
-            <input type="text" class="form-control geoy" placeholder="longitude" name="longitude"/>
+            <input type="text" class="form-control geox" placeholder="latitude" name="latitude" required/>
+            <input type="text" class="form-control geoy" placeholder="longitude" name="longitude" required/>
         </div>
         <button class="btn btn-lg btn-success btn-block" type="submit">Save Changes</button>
         <br>

@@ -7,8 +7,11 @@ if (!isset($_SESSION['username'])) { //if there isn't a session
 } else { //if there is
     $sql = "SELECT * FROM `login` WHERE username='$user'"; //from the table where the username is the logged in one
     $result = mysqli_query($connection, $sql); //send command
-    $row = mysqli_fetch_row($result)[3]; //gets 4th row (userdata)
-    $row = mysqli_fetch_row($result)[4]; //gets 5th row (layout)
+    $row4 = mysqli_fetch_row($result)[4]; //gets 4th row (userdata)
+    $row5 = mysqli_fetch_row($result)[5]; //gets 5th row (layout)
+    if ($row4 == "false") {
+        header("location: settings.php");
+    }
 }
 function update_layout($layout) {
     global $user, $connection; //hey, use these vars
@@ -16,8 +19,7 @@ function update_layout($layout) {
     mysqli_query($connection, $sql); //sends command
 }
 if (isset($_POST) & !empty($_POST)) { //if data submitted
-    $implode = implode(" ", $_POST["var"]);
-    update_layout($implode);
+    update_layout($_POST["var"]);
 }
 ?>
 <html lang="en">
